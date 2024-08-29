@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .destacado {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <div id="elem">Haz clic en mí</div>
+
+    <script>
+        const elem = document.querySelector("#elem");
+
+        elem.addEventListener("click", function() {
+            elem.style.backgroundColor = "blue";
+        });
+    </script>
+    <p id="miParrafo">haz clic para cambiar</p>
+
+    <script>
+        const parrafo = document.getElementById("miParrafo");
+
+        parrafo.addEventListener("click", function() {
+            if (parrafo.textContent === "haz clic para cambiar") {
+                parrafo.textContent = "texto cambiado";
+                parrafo.style.color = "red";
+                parrafo.style.fontSize = "24px";
+            } else {
+                parrafo.textContent = "haz clic para cambiar";
+                parrafo.style.color = "black";
+                parrafo.style.fontSize = "16px";
+            }
+        });
+    </script>
+<br>    <div id="mid">Haz clic para destacar</div>
+
+<script>
+    const mid = document.getElementById("mid");
+
+    mid.addEventListener("click", function() {
+        mid.classList.toggle("destacado");
+    });
+</script>
+
+
+
+</body>
+</html>

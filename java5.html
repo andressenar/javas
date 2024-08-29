@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+1 <br> <br>
+    
+    <button id="miboton">mi boton</button>
+    <p>Este es un parrafo.</p>
+    
+
+<script>
+let boton1 = document.querySelector("#miboton");
+boton1.textContent = "Nuevo texto";
+
+
+</script>
+
+2 <br><br>
+<button id="cambi">Cambiar estilo</button>
+<script>
+let boton2 = document.querySelector("#cambi");
+let parrafo = document.querySelector("p");
+
+boton2.addEventListener("click", function() {
+  parrafo.style.color = "blue";
+  parrafo.style.fontSize = "24px";
+});
+
+</script>
+3 <br>
+
+<script>
+    
+</script>
+</body>
+</html>

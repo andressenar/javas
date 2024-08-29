@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="buton">Haz clic en mí</button>
+
+    <script>
+        const boton = document.getElementById("buton");
+
+        boton.addEventListener("click", function() {
+            alert("has hecho clic en el boton");
+        });
+    </script>
+<div id="raton">Pasa el ratnn sobre mí</div>
+
+<script>
+    const raton = document.getElementById("raton");
+
+    raton.addEventListener("mouseover", function() {
+        raton.style.backgroundColor = "lightblue";
+    });
+
+    raton.addEventListener("mouseout", function() {
+        raton.style.backgroundColor = "white";
+    });
+</script>
+
+<div id="camb">Haz clic aquí</div>
+
+    <script>
+        const div = document.getElementById('camb');
+
+        div.addEventListener('click', () => {
+            div.style.backgroundColor = 'lightblue';
+        });
+    </script>
+
+</body>
+</html>
